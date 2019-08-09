@@ -1,0 +1,46 @@
+{
+  "name": "@smart-ai/jupyterlab-extensions",
+  "version": "0.1.0",
+  "description": "jupyterlab extensions",
+  "keywords": [
+    "jupyter",
+    "jupyterlab",
+    "jupyterlab-extension"
+  ],
+  "homepage": "https://github.com/WangChangsongGit/jupyterlab-extensions",
+  "bugs": {
+    "url": "https://github.com/WangChangsongGit/jupyterlab-extensions/issues"
+  },
+  "license": "BSD-3-Clause",
+  "author": "Julian",
+  "files": [
+    "dist/**/*.{d.ts,eot,gif,html,jpg,js,js.map,json,png,svg,woff2,ttf}",
+    "assets/**/*.{css,eot,gif,html,jpg,json,png,svg,woff2,ttf}"
+  ],
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "style": "assets/style/index.css",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/WangChangsongGit/jupyterlab-extensions.git"
+  },
+  "scripts": {
+    "build": "tsc",
+    "clean": "rimraf lib && rimraf tsconfig.tsbuildinfo",
+    "prepare": "npm run clean && npm run build",
+    "watch": "tsc -w"
+  },
+  "dependencies": {
+    "@jupyterlab/application": "^1.0.0"
+  },
+  "devDependencies": {
+    "rimraf": "^2.6.1",
+    "typescript": "~3.5.2"
+  },
+  "sideEffects": [
+    "assets/style/*.css"
+  ],
+  "jupyterlab": {
+    "extension": true
+  }
+}
