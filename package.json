@@ -32,7 +32,8 @@
   },
   "dependencies": {
     "@jupyterlab/application": "^1.0.2",
-    "@jupyterlab/notebook": "^1.0.2"
+    "@jupyterlab/notebook": "^1.0.2",
+    "antd": "^3.21.4"
   },
   "devDependencies": {
     "@types/react-dom": "^16.8.5",

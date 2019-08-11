@@ -3,7 +3,14 @@ import * as ReactDOM from 'react-dom';
 import {CodeCell} from '@jupyterlab/cells';
 import {CommandRegistry} from '@phosphor/commands';
 import {StaticNotebook} from "@jupyterlab/notebook";
+import { DatePicker } from 'antd';
+import 'antd/es/date-picker/style/css';
 
+const { MonthPicker, RangePicker, WeekPicker } = DatePicker;
+
+function onChange(date: any, dateString: any) {
+    console.log(date, dateString);
+}
 /**
  * The CSS classes added to the code cell.
  */
@@ -24,7 +31,13 @@ export class CodeCellWidget extends CodeCell {
 
         let inputAreaAppendNode = document.createElement("div");
         inputAreaAppendNode.classList.add(CODE_CELL_INPUT_AREA_APPEND_NODE_CLASS);
-        ReactDOM.render(<div></div>,
+        ReactDOM.render(<div><DatePicker onChange={onChange} />
+                <br />
+                <MonthPicker onChange={onChange} placeholder="Select month" />
+                <br />
+                <RangePicker onChange={onChange} />
+                <br />
+                <WeekPicker onChange={onChange} placeholder="Select week" /></div>,
             this.node.getElementsByClassName("jp-Cell-inputArea").item(0).appendChild(inputAreaAppendNode)
         );
 
