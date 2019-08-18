@@ -1,0 +1,17 @@
+
+:root {
+    /*菜单栏高度*/
+    --jp-private-menubar-height: 40px;
+    /*侧边栏Tab页签宽度*/
+    --jp-private-sidebar-tab-width: 50px;
+    /*侧边栏宽度*/
+    --jp-sidebar-min-width: 250px;
+    /*Tab页标签高度*/
+    --jp-private-horizontal-tab-height: 40px;
+    /*Toolbar高度*/
+    --jp-private-toolbar-height: 50px;
+    /*Cell布局*/
+    --jp-cell-collapser-width: 12px;
+    --jp-cell-collapser-min-height: 30px;
+    --jp-cell-prompt-width: 50px;
+}
