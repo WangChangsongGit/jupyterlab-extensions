@@ -1,5 +1,5 @@
 {
-  "name": "@smart-ai/jupyterlab-extensions",
+  "name": "@smart-ai/jupyterlab-cells",
   "version": "0.1.0",
   "description": "jupyterlab extensions",
   "keywords": [

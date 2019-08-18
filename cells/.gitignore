@@ -1,0 +1,10 @@
+*.bundle.*
+assets/
+dist/
+node_modules/
+*.egg-info/
+.ipynb_checkpoints
+*.tsbuildinfo
+.idea/
+yarn.lock
+package-lock.json
